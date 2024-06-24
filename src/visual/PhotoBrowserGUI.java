@@ -59,12 +59,12 @@ public class PhotoBrowserGUI {
             ArrayList<Collection> allCollections = ObjectBrowser.getInstanceForBrowser().getCollections();
             ArrayList<Tag> allTags = TagsList.getInstanceOfTagsList().getTagSet();
 
-            try (FileOutputStream fosColl = new FileOutputStream("../S30422Sysoiev/src/saves/collections.txt");
+            try (FileOutputStream fosColl = new FileOutputStream("../PhotoBrowser/src/saves/collections.txt");
                  ObjectOutputStream oosColl = new ObjectOutputStream(fosColl)) {
                 oosColl.writeObject(allCollections);
             }
 
-            try (FileOutputStream fosTags = new FileOutputStream("../S30422Sysoiev/src/saves/tags.txt");
+            try (FileOutputStream fosTags = new FileOutputStream("../PhotoBrowser/src/saves/tags.txt");
                  ObjectOutputStream oosTags = new ObjectOutputStream(fosTags)) {
                 oosTags.writeObject(allTags);
             }

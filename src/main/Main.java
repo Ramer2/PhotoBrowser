@@ -16,9 +16,9 @@ public class Main {
             ArrayList<Collection> allCollections;
             ArrayList<Tag> allTags;
 
-            FileInputStream fisColl = new FileInputStream("../S30422Sysoiev/src/saves/collections.txt");
+            FileInputStream fisColl = new FileInputStream("../PhotoBrowser/src/saves/collections.txt");
             ObjectInputStream oisColl = new ObjectInputStream(fisColl);
-            FileInputStream fisTags = new FileInputStream("../S30422Sysoiev/src/saves/tags.txt");
+            FileInputStream fisTags = new FileInputStream("../PhotoBrowser/src/saves/tags.txt");
             ObjectInputStream oisTags = new ObjectInputStream(fisTags);
 
             allCollections = (ArrayList<Collection>) oisColl.readObject();
